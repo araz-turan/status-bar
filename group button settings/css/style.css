@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #0F120E;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center-box {
+    background-color: #282828;
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: #282828;
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    border: 0.1rem solid #0F120E;
+    color: #575757;
+    transition: all ease 100ms;
+    cursor: pointer;
+}
+#input-1:checked + label, #input-2:checked + label, #input-3:checked + label, #input-4:checked + label, #input-5:checked + label,#input-6:checked + label {
+    border: #FFF 0.1rem solid;
+    color: #FFF;
+    box-shadow: -0.1rem -0.1rem 0.5rem #466c9a, 0.05rem 0.05rem 0.5rem #466c9a;
+}
+#input-1:checked + label i, #input-2:checked + label i, #input-3:checked + label i, #input-4:checked + label i, #input-5:checked + label i, #input-6:checked + label i {
+    filter: drop-shadow(0.05rem 0.05rem 0.5rem #466c9a);
+}
+
